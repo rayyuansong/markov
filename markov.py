@@ -1,5 +1,5 @@
 #
-# textmodel.py
+# 
 #
 # TextModel project!
 #
@@ -295,49 +295,4 @@ TM_Unk = TextModel()
 TM_Unk.readTextFromFile("unknown.txt")
 TM_Unk.compareTextWithTwoModels(TM1,TM2)
 
-print(" ++++++++++++++++++++++++++++++++++++++++++++ ")
-print(" +++++++++++ My Own Training Sets +++++++++++ ")
-print(" ++++++++++++++++++++++++++++++++++++++++++++ ")
 
-print("First text is from Part1, Chapter 1 from 1984 by George Orwell. ")
-TMa = TextModel()
-TMa.readTextFromFile("train_orwell.txt")
-
-
-print("Second text is from A Very Short Story by Ernest Hemingway.")
-TMb = TextModel()
-TMb.readTextFromFile("train_avst.txt")
-
-
-
-print(" We have Unknown text A ") #a snippet from Hemingway's the Old Man of the Sea
-TM_Unka = TextModel()
-TM_Unka.readTextFromFile("unka.txt")
-
-
-print(" We have Unknown text B ") #a snippet from Orwell's Animal farm
-TM_Unkb = TextModel()
-TM_Unkb.readTextFromFile("unkb.txt")
-
-
-print(" We have Unknown text C ") #a snippet from Orwell's letter to Fitzgerald
-TM_Unkc = TextModel()
-TM_Unkc.readTextFromFile("unkc.txt")
-
-print(" We have Unknown text D ") #a snippet from Orwell's letter to Fitzgerald
-TM_Unkd = TextModel()
-TM_Unkd.readTextFromFile("unkd.txt")
-
-print(" +++++++++++ Unknown text A Results +++++++++++ ")
-TM_Unka.compareTextWithTwoModels(TMa,TMb)
-
-
-
-print(" +++++++++++ Unknown text B Results +++++++++++ ")
-TM_Unkb.compareTextWithTwoModels(TMa,TMb)
-
-print(" +++++++++++ Unknown text C Results +++++++++++ ")
-TM_Unkc.compareTextWithTwoModels(TMa,TMb)
-
-print(" +++++++++++ Unknown text D Results +++++++++++ ")
-TM_Unkd.compareTextWithTwoModels(TMa,TMb)
